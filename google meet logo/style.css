@@ -1,0 +1,87 @@
+*
+body
+{
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.google-loader 
+{
+    width: 100px;
+    height: 100px;
+}
+.google-loader .dot
+{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    animation: 1.7s dotrotate cubic-bezier(0.775, 0.005, 0.310, 1.000) infinite;
+}
+.google-loader .dot:nth-child(1){
+    animation-delay: 0.2s;
+}
+.google-loader .dot:nth-child(2){
+    animation-delay: 0.35s;
+}
+.google-loader .dot:nth-child(3){
+    animation-delay: 0.45s;
+}
+.google-loader .dot:nth-child(4){
+    animation-delay: 0.55s;
+}
+
+.google-loader .dot:after,
+.google-loader .dot .first
+{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgb(72,133, 237);
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -4px;
+}
+.google-loader .dot .first
+{
+    background: #4885ed;
+    margin-top: -4px;
+    animation: 1.7s dotscale cubic-bezier(0.775, 0.005, 0.310, 1.000);
+    animation-delay: 0.2s;
+}
+@keyframes dotrotate 
+{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes dotscale {
+    0%,
+    10%{
+        width: 16px;
+        height: 16px;
+        margin-left: -8px;
+        margin-top: -4px;
+    }
+    50%{
+        width: 8px;
+        height: 8px;
+        margin-left: -4px;
+        margin-top: 0;
+    }
+    90%,
+    100%{
+        width: 16px;
+        height: 16px;
+        margin-left: -8px;
+        margin-top: -4px;
+    }
+}
