@@ -1,0 +1,310 @@
+body{
+    margin:0;
+    padding:0;
+    background:#fefcd5;
+    
+  }
+  
+  .container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+  }
+  
+  .face{
+    display:flex;
+    position:absolute;
+    justify-content:center;
+    height:300px;
+    width:300px;
+    border-radius:80% 80% 100% 100%;
+    background:#f8ddd6;
+  }
+  
+  .hair{
+    position:absolute;
+    width:300px;
+    height:100px;
+    background:#181616;
+    z-index:1;
+    border-radius:100% 100% 0% 0%;
+  }
+  
+  .crown-pt1{
+    top:55px;
+    right:-27px;
+    position:absolute;
+    height:75px;
+    width:185px;
+    background:#f1ec8f;
+    z-index:1;
+    transform: rotate(-10deg);
+    
+  }
+  .crown-pt2{
+    position:absolute;
+    left:-27px;
+    top:55px;
+    height:75px;
+    width:185px;
+    background:#f1ec8f;
+    z-index:1;
+    transform: rotate(10deg);
+  
+  }
+  .crown-pt3{
+    top:105px;
+    left:-15px;
+    position:absolute;
+    height:140px;
+    width:45px;
+    background:#f1ec8f;
+    z-index:1;
+    transform: rotate(-15deg);
+  }
+  
+  .crown-pt4{
+    top:105px;
+    right:-15px;
+    position:absolute;
+    height:140px;
+    width:45px;
+    background:#f1ec8f;
+    z-index:1;
+    transform: rotate(15deg);
+  }
+  
+  .crown-pt5{
+    position:absolute;
+    top:198px;
+    left:32px;
+    height:90px;
+    width:45px;
+    background:#f1ec8f;
+    z-index:1;
+    transform: rotate(-70deg);
+    border-radius:0 0 40% 0;
+  }
+  
+  .crown-pt6{
+    position:absolute;
+    top:198px;
+    right:32px;
+    height:90px;
+    width:45px;
+    background:#f1ec8f;
+    z-index:1;
+    transform: rotate(70deg);
+    border-radius:0 0 0 40%;
+  }
+  
+  .horn-1{
+    position: absolute;
+    top:-23%;
+    left: 150px;
+      width: 110px;
+      height: 170px;
+      background-color: transparent;
+      border-radius: 60% 15% 0% 0%;
+    box-shadow: 45px -15px 0px 0px #f1ec8f; 
+    z-index:2;
+    transform-origin: center bottom;
+   transform: rotate(
+  25deg);
+  }
+  
+  .horn-2{
+    position: absolute;
+    top:-23%;
+    right: 150px;
+      width: 110px;
+      height: 170px;
+      background-color: transparent;
+      border-radius: 60% 15% 0% 0%;
+    box-shadow: 45px -15px 0px 0px #f1ec8f; 
+    z-index:2;
+    transform-origin: center bottom;
+  transform: scaleX(-1) rotate(25deg);
+  
+  }
+  
+  .hornshadow1{
+    left:-20px;
+    top:-40px;
+    position:absolute;
+    z-index:1;
+       width: 0;
+       height: 0;
+       border-left: 15px solid transparent;
+       border-right: 15px solid transparent;
+       border-top: 30px solid #e0d679;
+    transform: rotate(-25deg);
+  }
+  
+  .hornshadow2{
+    right:-20px;
+    top:-40px;
+    position:absolute;
+    z-index:1;
+       width: 0;
+       height: 0;
+       border-left: 15px solid transparent;
+       border-right: 15px solid transparent;
+       border-top: 30px solid #e0d679;
+    transform: rotate(25deg);
+  }
+  
+  .greenjewel1{
+    top:24%;
+    left:24%;
+    position:absolute;
+    height: 80px;
+    width: 45px;
+    clip-path: polygon(10% 30%, 90% 30%, 90% 100%, 10% 100%);
+    background:#3eb47a;
+    z-index:2;
+    transform: scaleY(-1) skew(-25deg, -10deg);
+  }
+  
+  .greenjewel2{
+    top:24%;
+    right:24%;
+    position:absolute;
+    height: 80px;
+    width: 45px;
+    clip-path: polygon(10% 30%, 90% 30%, 90% 100%, 10% 100%);
+    background:#3eb47a;
+    z-index:2;
+    transform: scaleY(-1) skew(25deg, 10deg);
+  }
+  
+  .jewel{
+    top:26%;
+    position:absolute;
+    height: 80px;
+    width: 45px;
+    clip-path: polygon(30% 30%, 70% 30%, 100% 100%, 0% 100%);
+    background:#faf8d6;
+    z-index:2;
+    transform: scaleY(-1);
+  }
+  
+  .leftcircle{
+    position:absolute;
+    background:#181616;
+    width:30px;
+    height:30px;
+    border-radius:100%;
+    z-index:2;
+    top:180px;
+    left:70px;
+  }
+  .rightcircle{
+    position:absolute;
+    background:#181616;
+    width:30px;
+    height:30px;
+    border-radius:100%;
+    z-index:2;
+    top:180px;
+    right:70px;
+  }
+  
+  .lefteyebrow{
+    position:absolute;
+    top:180px;
+    left:60px;
+    width: 18%;
+    height:9px;
+    background-color: #181616;
+      transform: rotate(
+  15deg
+  );
+    border-radius: 16px;
+    z-index:2;
+  }
+  
+  .righteyebrow{
+    position:absolute;
+    top:180px;
+    right:60px;
+    width: 18%;
+    height: 9px;
+    background-color: #181616;
+      transform: rotate(
+  -15deg
+  );
+    border-radius: 16px;
+    z-index:2;
+  }
+  
+  .mouth{
+    width: 25px;
+    height: 10px;
+    border: solid 5px #000;
+    border-color: transparent transparent #000 transparent;
+    border-radius: 0 0 60% 60%/10px;
+    position: absolute;
+    top: 80%;
+    transform: skew(25deg,-10deg);
+  }
+  
+  .hairstrand1{
+    position: absolute; 
+    left:-100px;
+      width: 90px;
+      height:120px;
+      background-color: transparent;
+      border-radius: 60% 60% 0% 0%;
+    box-shadow: 45px -15px 0px 0px #181616; 
+    z-index:1;
+    transform-origin: center bottom;
+    transform: scaleY(-1) rotateZ(-20deg);
+  
+   
+  }
+  
+  .hairstrand2{
+    position: absolute;
+    top:-20px;
+    left:-90px;
+      width: 100px;
+      height:150px;
+      background-color: transparent;
+      border-radius: 60% 60% 0% 0%;
+    box-shadow: 45px -15px 0px 0px #181616; 
+    z-index:-1;
+    transform-origin: center bottom;
+    transform: scaleY(-1) rotateZ(-10deg);
+   
+  }
+  
+  .hairstrand3{
+    position: absolute; 
+    right:-100px;
+      width: 90px;
+      height:120px;
+      background-color: transparent;
+      border-radius: 60% 60% 0% 0%;
+    box-shadow: 45px -15px 0px 0px #181616; 
+    z-index:1;
+    transform-origin: center bottom;
+    transform: scale(-1) rotateZ(-20deg);
+  }
+  
+  .hairstrand4{
+    position: absolute;
+    top:-20px;
+    right:-90px;
+      width: 100px;
+      height:150px;
+      background-color: transparent;
+      border-radius: 60% 60% 0% 0%;
+    box-shadow: 45px -15px 0px 0px #181616; 
+    z-index:-1;
+    transform-origin: center bottom;
+    transform: scale(-1) rotateZ(-10deg);
+   
+  }
+  
