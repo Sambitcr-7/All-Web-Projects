@@ -1,0 +1,189 @@
+body
+{
+    background-color: #ffb64c;
+    padding: 0;
+    margin: 0;
+}
+.wrapper
+{
+    background-color: #ffff;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    z-index: -3;
+    box-shadow: 15px 20px 40px rgba(155, 94, 3, 0.25);
+
+}
+.parrot
+{
+    background-color: #f03800;
+    height: 150px;
+    width: 80px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 60px;
+    border-radius: 45px 15px;
+
+}
+.parrot::before
+{
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 28px;
+    background-color: #cd0000;
+    border-radius: 0 0 20px 6px;
+    bottom: -45px;
+    z-index: -1;
+
+}
+.parrot::after
+{
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 28px;
+    border-radius: 0 0 30px 0px;
+    background-color: #cd0000;
+    bottom: -30px;
+    left: 25px;
+    z-index: -1;
+}
+.wing
+{
+    background-color: #f03800;
+    height: 110px;
+    width: 60px;
+    position: absolute;
+    left: -15px;
+    top: 50px;
+    border-radius: 50px 10px;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.wing::before
+{
+    position: absolute;
+    content: "";
+    background-color: #0095ff;
+    height: 60%;
+    width: 100%;
+    bottom: 0;
+}
+.color-wing
+{
+    height: 0;
+    width: 0;
+    border-top: 30px solid #ffb64c;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    top: 44px;
+    margin: auto;
+    left: 0;
+    right: 0;
+
+}
+.color-wing:before
+{
+    position: absolute;
+    content: "";
+    border-top: 25px solid #f03800;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    right: -24px;
+    bottom: 16px;
+}
+.eye
+{
+    height: 60px;
+    width: 70%;
+    background-color: #deecf1;
+    border-radius: 50px 20px 20px 50px;
+    position: absolute;
+    right: -0.5%;
+    top: 0;
+    z-index: 2;
+}
+.eye::before
+{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #714c2f;
+    border-radius: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+}
+.beak
+{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: #ffb64c;
+    z-index: -1;
+    right: -48px;
+    border-radius: 0 55px 5px 0;
+}
+.beak:before
+{
+    position: absolute;
+    content: "";
+    background-color: #ff9100;
+    height: 25px;
+    width: 25px;
+    left: 11.5px;
+    bottom: -25px;
+    border-radius: 0 0 25px 0;
+}
+.feather
+{
+    background-color: #cd0000;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px 0 0 100px;
+    position: absolute;
+    z-index: -1;
+    left: -30px;
+
+}
+.leg
+{
+    background-color: #ff9100;
+    height: 35px;
+    width: 70px;
+    border-radius: 0 70px 10px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    z-index: -2;
+
+}
+.branch
+{
+    background-color: #ff9100;
+    height: 8px;
+    width: 210px;
+    position: absolute;
+    right: -55px;
+    bottom: -8px;
+}
+.wrapper::after
+{
+    position: absolute;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 3;
+}
